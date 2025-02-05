@@ -1,0 +1,60 @@
+.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Menu</title>
+    <link rel="stylesheet" href="mchelp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="help-overlay">
+        <div class="help-container">
+            <div class="header">
+                <h1>HELP</h1>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search for help...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="esc-hint">Press ESC to close</div>
+            </div>
+
+            <div class="content">
+                <div class="categories">
+                    <button class="category-btn" data-category="faq">
+                        <i class="fas fa-scroll"></i>
+                        <span>F.A.Q.</span>
+                    </button>
+                    <button class="category-btn" data-category="inventory">
+                        <i class="fas fa-backpack"></i>
+                        <span>INVENTORY</span>
+                    </button>
+                    <button class="category-btn" data-category="police">
+                        <i class="fas fa-police-box"></i>
+                        <span>POLICE INFO</span>
+                    </button>
+                    <button class="category-btn" data-category="medical">
+                        <i class="fas fa-ambulance"></i>
+                        <span>MEDICAL INFO</span>
+                    </button>
+                    <button class="category-btn" data-category="mechanic">
+                        <i class="fas fa-wrench"></i>
+                        <span>MECHANIC INFO</span>
+                    </button>
+                    <button class="category-btn" data-category="ticket">
+                        <i class="fas fa-ticket"></i>
+                        <span>SUPPORT TICKET</span>
+                    </button>
+                </div>
+
+                <div class="qa-container">
+                    <div class="questions-list"></div>
+                    <div class="answer-panel"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="mchelp.js"></script>
+</body>
+</html>
